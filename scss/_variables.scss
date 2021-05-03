@@ -1,0 +1,83 @@
+//----- colors -----
+$main-clr: #d9b88b;
+$lightMain-clr: rgba(217, 184, 139, 0.5); //used as background > carousel caption > home page
+$breadcrumb-clr: #ece2d8;
+$second-clr: #f2ede9;
+$footer-clr: #333;
+$sideNav-bg: #333;
+$mainFont-clr: #333;
+$cafeFont-clr: #d9b88b;
+
+$third-clr: #5A2A35;
+
+//----- font-sizes -----
+$main-fontSize: 16px;
+$heading-fontSize: 32px;
+$breadcrumb-fontSize: 18px;
+$login-fontSize: 18px;
+$med-fontSize: 24px;
+
+$secPadding: 35px 0;
+
+
+//----- translate -----
+$isRtl: ltr;
+$left: left;
+$right: right;
+$direction: ltr;
+$flex-direction: row;
+
+//-- font-trans
+$bodyFont: SourceSansPro-Regular;
+$headingFont: SourceSansPro-Bold;
+$headingFontLight: SourceSansPro-Light;
+$headingFontSemi: SourceSansPro-SemiBold;
+$langFont: DroidKufi;
+
+//-- arrow-trans
+$double-right: "\f101";
+$double-left: "\f100";
+$chevron-left: "\f053";
+$chevron-right: "\f054";
+$angle-right: '\f105';
+
+@if $isRtl == rtl {
+  $left: right;
+  $right: left;
+  $direction: rtl;
+  $minus: -1;
+  $bodyFont: DroidKufi;
+  $headingFont: DroidKufi;
+  $headingFontLight: DroidKufi;
+  $headingFontSemi: SourceSansPro-SemiBold;
+  $langFont: RobotoSlab;
+  $navSize: 18px;
+  $double-right: "\f100";
+  $double-left: "\f101";
+  $angle-right: '\f104';
+  $chevron-left: "\f054";
+  $chevron-right: "\f053";
+  $rotate90: -90deg;
+  $flex-direction: row-reverse;
+  $rotateY: rotateY(180deg);
+  $rotateZ: rotateZ(180deg);
+} @else {
+  $left: left;
+  $right: right;
+  $direction: ltr;
+  $minus: 1;
+  $bodyFont: SourceSansPro-Regular;
+  $headingFont: SourceSansPro-Bold;
+  $headingFontLight: SourceSansPro-Light;
+  $headingFontSemi: SourceSansPro-SemiBold;
+  $langFont: DroidKufi;
+  $double-right: "\f101";
+  $double-left: "\f100";
+  $angle-right: '\f105';
+  $chevron-left: "\f053";
+  $chevron-right: "\f054";
+  $rotate90: 90deg;
+  $flex-direction: row;
+  $rotateY: rotateY(0);
+  $rotateZ: rotateZ(0);
+}

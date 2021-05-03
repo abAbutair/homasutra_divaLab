@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style-en.css">
+    <title>homa sutra</title>
+</head>
+<body>
+<div class="loader-container">
+    <div class="loader-logo" style="background-image: url('images/logo.png')">
+        <div class="loader-circle"></div>
+    </div>
+</div>
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="registeration">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>register</span><i class="fas fa-user-plus"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
+                            <span>sign in</span><i class="fas fa-sign-in-alt"></i>
+                        </button>
+                    </li>
+                    <li class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            language
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Arabic</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="01-index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+            <div class="side-nav" onclick="openNav()">
+                <div id="nav-icon2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="mySideNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="01-index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="02-categories.html">categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="03-products.html">product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contact us</a>
+                    </li>
+                    <li>
+                        <div class="social-links-res">
+                            <p>follow us</p>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="breadcrumb-wrap">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="01-index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="02-categories.html">categories</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">products</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <section class="products-page">
+        <div class="container">
+            <div class="product-list-in clearfix">
+
+                <div class="filtration">
+                    <div class="open-filter" onclick="openFilter()"></div>
+                    <form action="">
+                        <div class="filter-block">
+                            <div class="internals-title">
+                                <h2>product categories</h2>
+                            </div>
+                            <div class="check-square02">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck01">
+                                    <label class="form-check-label" for="gridCheck01">furniture deals</label>
+                                </div>
+                                <ul class="sup-category">
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck20">
+                                            <label class="form-check-label" for="gridCheck20">furniture deals</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="check-square02">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck02">
+                                    <label class="form-check-label" for="gridCheck02">sofas</label>
+                                </div>
+                            </div>
+                            <div class="check-square02">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck03">
+                                    <label class="form-check-label" for="gridCheck03">storage</label>
+                                </div>
+                            </div>
+                            <div class="check-square02">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck04">
+                                    <label class="form-check-label" for="gridCheck04">tables</label>
+                                </div>
+                            </div>
+                            <div class="check-square02">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck05">
+                                    <label class="form-check-label" for="gridCheck05">chairs</label>
+                                </div>
+                            </div>
+                            <div class="check-square02">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck06">
+                                    <label class="form-check-label" for="gridCheck06">home office</label>
+                                </div>
+                            </div>
+                            <div class="check-square02">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck07">
+                                    <label class="form-check-label" for="gridCheck07">kitchen & dining</label>
+                                </div>
+                            </div>
+                            <div class="check-square02">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck08">
+                                    <label class="form-check-label" for="gridCheck08">lighting</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-block">
+                            <div class="internals-title">
+                                <h2>filter by price</h2>
+                            </div>
+                            <div class="range-price d-flex">
+                                <div class="min">
+                                    <input type="text" id="min_amount" value="" name="min_amount" readonly="readonly" >
+                                </div>
+                                <div class="max">
+                                    <input type="text" id="max_amount" value="" name="max_amount" readonly="readonly" >
+                                </div>
+                            </div>
+                            <div id="price_range"></div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <button type="submit" class="btn" style="    margin-bottom: 11px;">
+                                Search
+                            </button>
+                            <button type="button" class="btn" onclick="location.href='https://www.homasutra.com/shop'">
+                                Reset
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="product-list">
+                    <div class="row">
+                        <div class="col-xxl-4 col-xl-4 col-lg-6">
+                            <div class="single-cat">
+                                <div class="col-img" style="background-image: url('images/5.jpg')">
+                                </div>
+                                <div class="description">
+                                    <a href="04-product-details.html">room & wall decor</a>
+                                </div>
+                                <div class="price">
+                                    <span>229 LE</span>
+                                    <span class="sale-price">249LE</span>
+                                </div>
+                                <div class="cart-fav">
+                                    <ul>
+                                        <li>
+                                            <button class="btn add-to-cart active" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn add-to-fav active" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn show-preview " type="submit"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="the-discount">
+                                    <span>-10%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-6">
+                            <div class="single-cat">
+                                <div class="col-img" style="background-image: url('images/4.jpg')">
+                                </div>
+                                <div class="description">
+                                    <a href="04-product-details.html">room & wall decor</a>
+                                </div>
+                                <div class="price">
+                                    <span>229 LE</span>
+                                    <span class="sale-price">249LE</span>
+                                </div>
+                                <div class="cart-fav">
+                                    <ul>
+                                        <li>
+                                            <button class="btn add-to-cart" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn add-to-fav" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn show-preview " type="submit"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="the-discount">
+                                    <span>-10%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-6">
+                            <div class="single-cat">
+                                <div class="col-img" style="background-image: url('images/3.jpg')">
+                                </div>
+                                <div class="description">
+                                    <a href="04-product-details.html">room & wall decor</a>
+                                </div>
+                                <div class="price">
+                                    <span>229 LE</span>
+                                    <span class="sale-price">249LE</span>
+                                </div>
+                                <div class="cart-fav">
+                                    <ul>
+                                        <li>
+                                            <button class="btn add-to-cart" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn add-to-fav" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn show-preview " type="submit"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="the-discount">
+                                    <span>-10%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-6">
+                            <div class="single-cat">
+                                <div class="col-img" style="background-image: url('images/2.jpg')">
+                                </div>
+                                <div class="description">
+                                    <a href="04-product-details.html">room & wall decor</a>
+                                </div>
+                                <div class="price">
+                                    <span>229 LE</span>
+                                </div>
+                                <div class="cart-fav">
+                                    <ul>
+                                        <li>
+                                            <button class="btn add-to-cart" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn add-to-fav" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn show-preview " type="submit"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-6">
+                            <div class="single-cat">
+                                <div class="col-img" style="background-image: url('images/4.jpg')">
+                                </div>
+                                <div class="description">
+                                    <a href="04-product-details.html">room & wall decor</a>
+                                </div>
+                                <div class="price">
+                                    <span>229 LE</span>
+                                </div>
+                                <div class="cart-fav">
+                                    <ul>
+                                        <li>
+                                            <button class="btn add-to-cart" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn add-to-fav" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn show-preview " type="submit"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-6">
+                            <div class="single-cat">
+                                <div class="col-img" style="background-image: url('images/1.jpg')">
+                                </div>
+                                <div class="description">
+                                    <a href="04-product-details.html">room & wall decor</a>
+                                </div>
+                                <div class="price">
+                                    <span>229 LE</span>
+                                </div>
+                                <div class="cart-fav">
+                                    <ul>
+                                        <li>
+                                            <button class="btn add-to-cart" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn add-to-fav" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn show-preview " type="submit"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-6">
+                            <div class="single-cat">
+                                <div class="col-img" style="background-image: url('images/3.jpg')">
+                                </div>
+                                <div class="description">
+                                    <a href="04-product-details.html">room & wall decor</a>
+                                </div>
+                                <div class="price">
+                                    <span>229 LE</span>
+                                </div>
+                                <div class="cart-fav">
+                                    <ul>
+                                        <li>
+                                            <button class="btn add-to-cart" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn add-to-fav" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn show-preview " type="submit"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-6">
+                            <div class="single-cat">
+                                <div class="col-img" style="background-image: url('images/5.jpg')">
+                                </div>
+                                <div class="description">
+                                    <a href="04-product-details.html">room & wall decor</a>
+                                </div>
+                                <div class="price">
+                                    <span>229 LE</span>
+                                </div>
+                                <div class="cart-fav">
+                                    <ul>
+                                        <li>
+                                            <button class="btn add-to-cart" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn add-to-fav" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn show-preview " type="submit"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-6">
+                            <div class="single-cat">
+                                <div class="col-img" style="background-image: url('images/5.jpg')">
+                                </div>
+                                <div class="description">
+                                    <a href="04-product-details.html">room & wall decor</a>
+                                </div>
+                                <div class="price">
+                                    <span>229 LE</span>
+                                </div>
+                                <div class="cart-fav">
+                                    <ul>
+                                        <li>
+                                            <button class="btn add-to-cart" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn add-to-fav" type="button"></button>
+                                        </li>
+                                        <li>
+                                            <button class="btn show-preview " type="submit"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <nav aria-label="..." class="pagination-wrapper">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="" tabindex="-1">Previous</a>
+                                    </li>
+                                    <li class="page-item active"><span class="page-link">1</span></li>
+                                    <li class="page-item"><a class="page-link" href="https://www.homasutra.com/products?_token=ewJXz3zVnOEbmUyXLnT4qlElHSdsx0cKbPhhtHIE&amp;min_amount=100&amp;max_amount=9500&amp;page=2">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="https://www.homasutra.com/products?_token=ewJXz3zVnOEbmUyXLnT4qlElHSdsx0cKbPhhtHIE&amp;min_amount=100&amp;max_amount=9500&amp;page=3">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="https://www.homasutra.com/products?_token=ewJXz3zVnOEbmUyXLnT4qlElHSdsx0cKbPhhtHIE&amp;min_amount=100&amp;max_amount=9500&amp;page=4">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="https://www.homasutra.com/products?_token=ewJXz3zVnOEbmUyXLnT4qlElHSdsx0cKbPhhtHIE&amp;min_amount=100&amp;max_amount=9500&amp;page=5">5</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="https://www.homasutra.com/products?_token=ewJXz3zVnOEbmUyXLnT4qlElHSdsx0cKbPhhtHIE&amp;min_amount=100&amp;max_amount=9500&amp;page=2">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="social-links">
+    <ul>
+        <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+    </ul>
+</div>
+<footer>
+    <nav class="footer-nav">
+        <ul>
+            <li>
+                <a href="01-index.html">home</a>
+            </li>
+            <li>
+                <a href="#">about</a>
+            </li>
+            <li>
+                <a href="02-categories.html">categories</a>
+            </li>
+            <li>
+                <a href="03-products.html">product</a>
+            </li>
+            <li>
+                <a href="#">contact us</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="copyRight">
+        <p>copyright &copy; all right reserved. <a href="https://www.diva-lab.com/">diva-lab</a></p>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2>sign in</h2>
+                <form action="">
+                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
+                    <input type="password" class="form-control" placeholder="Password">
+                    <div class="forget-pass">
+                        <div class="check-square">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">remember me</label>
+                            </div>
+                        </div>
+                        <a href="#"> forget password</a>
+                    </div>
+                    <button type="submit" class="btn">
+                        Sign in
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
+<script>
+	$( function() {
+		var values= [ 100, 500 ];
+		$("#price_range").slider({
+			range: true,
+			min: 20,
+			max: 600,
+			values: values,
+			slide: function( event, ui ) {
+
+				$( 'input[name="min_amount"]' ).val( ui.values[ 0 ] + "$" ); //+ " - $" + ui.values[ 1 ] );
+				$( 'input[name="max_amount"]' ).val( ui.values[ 1 ] + "$" ); //+ " - $" + ui.values[ 1 ] );
+
+				if ( (ui.values[0] != values[0]) ||  (ui.values[1] != values[1]) ){
+					$(this).closest('li').addClass("checked");
+				}else{
+					$(this).closest('li').removeClass("checked");
+				}
+
+				//console.log($("#min_amount").val())
+			}
+		});
+
+		$("#min_amount").val( $( "#price_range" ).slider( "values", 0  )+ "$");// +
+		$("#max_amount").val( $( "#price_range" ).slider( "values", 1 ) + "$");// +
+	} );
+</script>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
